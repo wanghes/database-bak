@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首都孵化器大数据应用平台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="alternate icon" type="image/png" href="./i/favicon.png">
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<body>
+<section class="person-title">
+    <div class="head-title">
+        <div class="am-g">
+            <div class="am-u-sm-12">
+                <div class="am-u-sm-5"></div>
+                <div class="am-u-sm-7"> <h3>欢迎回来，wang_hes</h3></div>
+            </div>
+        </div>
+    </div>
+    <div class="cate-title">
+        <div class="am-g">
+            <div class="am-u-sm-12">
+                <div class="am-u-sm-5"></div>
+                <div class="am-u-sm-7"><h2>发布招聘信息</h2></div>
+            </div>
+        </div>
+    </div>
+    <div class="head-img">
+        <div class="am-g">
+            <div class="am-u-sm-5"><img src="images/head.jpg"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="listTable">
+    <div class="touchmove">
+        <div class="am-g listone">
+            <div class="am-u-sm-4">
+                <img src="images/head.jpg">
+            </div>
+            <div class="am-u-sm-7">
+                <h3>招聘java工程师</h3>
+                <p>1、利用网络进行公司产品销售及推广；2...</p>
+            </div>
+            <div class="am-u-sm-1 icon-r-arrow" style=""></div>
+        </div>
+        <div class="open am-cf" style="display: none;">
+            <span></span>
+            <a href="#" class="deleteJob">删除</a>
+            <a href="#" class="editJob">编辑</a>
+            <a href="#" class="opendetail">查看</a>
+            <a href="#" class="receiveDoc">接收简历<br>（12）</a>
+        </div>
+    </div>
+    <a href="#" >
+        <div class="am-g listone">
+            <div class="am-u-sm-4">
+                <img src="images/lis2.png">
+            </div>
+            <div class="am-u-sm-7">
+                <h3>iOS高级开发工程师</h3>
+                <p>1、利用网络进行公司产品销售及推广；2...</p>
+            </div>
+            <div class="am-u-sm-1 icon-r-arrow" style=""></div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="am-g listone">
+            <div class="am-u-sm-4">
+                <img src="images/lis.png">
+            </div>
+            <div class="am-u-sm-7">
+                <h3>web前端工程师</h3>
+                <p>1、利用网络进行公司产品销售及推广；2...</p>
+            </div>
+            <div class="am-u-sm-1 icon-r-arrow" style=""></div>
+        </div>
+    </a>
+</section>
+
+<section class="btn-box">
+    <div class="am-g">
+        <a href="pubJobInfo.html" class="am-btn am-btn-primary am-btn-lg">创建英雄帖</a>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="am-g">
+        <a href="javascript:history.go(-1);">
+            <div class="am-u-sm-2 back">
+                <i class="myicon-back"></i>
+            </div>
+        </a>
+        <a href="index.html">
+            <div class="am-u-sm-8 home">
+                <i class="myicon-home"></i>
+            </div>
+        </a>
+        <a href="javascript:;">
+            <div class="am-u-sm-2 set">
+                <i class="myicon-set"></i>
+            </div>
+        </a>
+    </div>
+</footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/amazeui.min.js"></script>
+<script>
+    var touchmove = document.querySelector('.touchmove');
+    touchmove.addEventListener("touchstart", touchStart, false);
+    function touchStart(event){
+        var open = this.querySelector('.open');
+        var listone = this.querySelector('.listone');
+        open.style.height = this.offsetHeight+'px';
+        if(this.querySelector('.open').style.display == 'none'){
+            listone.style.display="none";
+            open.style.display='block';
+        }else{
+            listone.style.display='block';
+            open.style.display='none';
+        }
+
+    }
+</script>
+</html>
